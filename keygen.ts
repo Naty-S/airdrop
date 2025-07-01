@@ -1,0 +1,6 @@
+import { Keypair } from "@solana/web3.js";
+
+// Gen new keypair
+let kp = Keypair.generate();
+console.log(`You've generated a new Solana wallet:\n${kp.publicKey.toBase58()}`);
+console.log(`[${kp.secretKey}]`);
